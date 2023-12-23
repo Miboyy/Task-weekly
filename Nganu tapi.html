@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Datang!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        #trumpet {
+            width: 100px;
+        }
+
+        #welcome-message {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <script async src="main.js"></script>
+
+    <h1 id="welcome-message"></h1>
+
+    <script>
+        // Menggunakan prompt untuk mendapatkan nama dari pengguna
+        var namaPengguna = prompt("Masukkan nama Anda:");
+
+        // Memastikan bahwa namaPengguna tidak kosong atau null
+        if (namaPengguna) {
+            // Menampilkan pesan selamat datang dengan nama pengguna
+            document.getElementById("welcome-message").innerText = "Selamat Datang Pak" + namaPengguna + "!,\n"
+            + "Terimakasih juga atas kunjungannya";
+
+        } else {
+            // Jika nama tidak dimasukkan, menampilkan pesan default
+            document.getElementById("welcome-message").innerText = "Gak ada apa apa,makanya masukan nama dulu pak";
+        }
+    </script>
+</body>
+<script async src="main.js"></script>
+</html>
